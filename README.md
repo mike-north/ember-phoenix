@@ -1,4 +1,4 @@
-# Ember-phoenix
+# Ember-phoenix [![Build Status](https://travis-ci.org/levanto-financial/ember-phoenix.svg?branch=master)](https://travis-ci.org/levanto-financial/ember-phoenix)
 
 This README outlines the details of collaborating on this Ember addon.
 
