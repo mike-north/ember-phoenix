@@ -1,6 +1,18 @@
 # Ember-phoenix [![Build Status](https://travis-ci.org/levanto-financial/ember-phoenix.svg?branch=master)](https://travis-ci.org/levanto-financial/ember-phoenix)
 
-This README outlines the details of collaborating on this Ember addon.
+## Use
+
+You can import phoenix framework client-side utilities as an ES6 module
+
+```js
+import { Socket } from 'phoenix';
+
+let socket = new Socket('/socket', {
+  logger: ((kind, msg, data) => {
+    console.log(`${kind}: ${msg}`, data);
+  })
+});
+```
 
 ## Installation
 
