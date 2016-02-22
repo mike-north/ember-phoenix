@@ -1,1 +1,1 @@
-export { default } from 'ember-phoenix/services/phoenix-socket';
+export { default } from 'phoenix/services/phoenix-socket';

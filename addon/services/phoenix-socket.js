@@ -1,9 +1,9 @@
 import Ember from 'ember';
 import { Socket } from 'phoenix';
 
-const { assert } = Ember;
+const { assert, Service, Evented } = Ember;
 
-export default Ember.Service.extend(Ember.Evented, {
+export default Service.extend(Evented, {
   socket: null,
   isHealthy: false,
 
