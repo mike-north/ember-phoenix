@@ -35,6 +35,7 @@
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
+    "ember-suave": "2.0.1",
     "ember-try": "~0.0.8",
     "mock-socket": "^2.0.0"
   },
