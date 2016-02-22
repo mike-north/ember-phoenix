@@ -1,6 +1,6 @@
 {
   "name": "ember-phoenix",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Elxir/Phoenix awesomeness for Ember.js apps",
   "directories": {
     "doc": "doc",
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",

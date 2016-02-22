@@ -1,6 +1,6 @@
 # Ember-phoenix [![Build Status](https://travis-ci.org/levanto-financial/ember-phoenix.svg?branch=master)](https://travis-ci.org/levanto-financial/ember-phoenix)
 
-## Use
+## Low-Level Use
 
 You can import phoenix framework client-side utilities as an ES6 module
 
@@ -13,6 +13,46 @@ let socket = new Socket('/socket', {
   })
 });
 ```
+
+## Reccomended Use
+
+Build a service around a socket (you will usually have only one, since phoenix multiplexes for you)
+
+```js
+
+import PhoenixSocket from 'phoenix/services/phoenix-socket';
+
+export default PhoenixSocket.extend({
+  
+  init() {
+    // You may listen to open, "close" and "error"
+    this.on('open', () => {
+      console.log('Socket was opened!');
+    })
+  },
+  
+  connect(/*url, options*/) {
+    const myjwt = "abacnwih12eh12...";
+    // connect the socket
+    this.super("wss://myhost.com/socket/mysocket", {
+      params: {token: myjwt}
+    });
+
+    // join a channel
+    const channel = this.joinChannel("room:123", {
+      nickname: "Mike"
+    });
+
+    // add message handlers
+    chan.on("notification", () => _onNotification(...arguments));
+  },
+
+  _onNotification(message) {
+    alert(`Notification: ${message}`);
+  }
+});
+```
+
 
 ## Installation
 
