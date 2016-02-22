@@ -3,7 +3,6 @@ import { module, test } from 'qunit';
 
 module('phoenix javascript module');
 
-
 test('it works', function(assert) {
   assert.expect(2);
   let done = assert.async();
@@ -11,7 +10,7 @@ test('it works', function(assert) {
     logger: ((kind, msg, data) => {
       console.log(`${kind}: ${msg}`, data);
     }),
-    params: {user_id: "123"}
+    params: { userId: '123' }
   });
   assert.ok(socket);
 
