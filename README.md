@@ -14,7 +14,7 @@ let socket = new Socket('/socket', {
 });
 ```
 
-## Reccomended Use
+## Recommended Use
 
 Build a service around a socket (you will usually have only one, since phoenix multiplexes for you)
 
