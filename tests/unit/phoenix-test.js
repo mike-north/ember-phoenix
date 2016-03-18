@@ -7,9 +7,6 @@ test('it works', function(assert) {
   assert.expect(2);
   let done = assert.async();
   let socket = new Socket('/socket', {
-    logger: ((kind, msg, data) => {
-      console.log(`${kind}: ${msg}`, data);
-    }),
     params: { userId: '123' }
   });
   assert.ok(socket);
@@ -17,7 +14,6 @@ test('it works', function(assert) {
   socket.connect();
 
   socket.onClose(() => {
-    console.log('close');
     assert.ok(true, 'Did Close');
     done();
   });
