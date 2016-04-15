@@ -44,7 +44,7 @@ export default PhoenixSocket.extend({
     });
 
     // add message handlers
-    chan.on("notification", () => _onNotification(...arguments));
+    channel.on("notification", this._onNotification);
   },
 
   _onNotification(message) {
