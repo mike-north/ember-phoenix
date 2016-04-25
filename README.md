@@ -34,7 +34,7 @@ export default PhoenixSocket.extend({
   connect(/*url, options*/) {
     const myjwt = "abacnwih12eh12...";
     // connect the socket
-    this.super("wss://myhost.com/socket/mysocket", {
+    this._super("wss://myhost.com/socket/mysocket", {
       params: {token: myjwt}
     });
 
