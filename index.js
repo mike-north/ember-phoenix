@@ -2,5 +2,12 @@
 'use strict';
 
 module.exports = {
-  name: 'phoenix'
+  name: 'phoenix',
+
+  included: function(app) {
+    this._super.included(app);
+    if (process.env.EMBER_CLI_FASTBOOT !== 'true') {
+      app.import('vendor/phoenix.js');
+    }
+  }
 };
