@@ -1,5 +1,11 @@
 # Ember-phoenix [![Build Status](https://travis-ci.org/levanto-financial/ember-phoenix.svg?branch=master)](https://travis-ci.org/levanto-financial/ember-phoenix) [![Ember Observer Score](https://emberobserver.com/badges/ember-phoenix.svg)](https://emberobserver.com/addons/ember-phoenix) [![npm version](https://badge.fury.io/js/ember-phoenix.svg)](https://badge.fury.io/js/ember-phoenix)
 
+## Installation
+
+```
+ember install ember-phoenix
+```
+
 ## Low-Level Use
 
 You can import phoenix framework client-side utilities as an ES6 module
@@ -53,8 +59,7 @@ export default PhoenixSocket.extend({
 });
 ```
 
-
-## Installation
+## Contributing
 
 * `git clone` this repository
 * `npm install`
