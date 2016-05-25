@@ -1,7 +1,5 @@
 /* jshint node: true */
 'use strict';
-var esTranspiler = require('broccoli-babel-transpiler');
-var BroccoliMergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'phoenix',
