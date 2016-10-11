@@ -1,30 +1,38 @@
+---
 language: node_js
 node_js:
-- '0.12'
+  - "4"
+
 sudo: false
+
 cache:
   directories:
-  - node_modules
+    - node_modules
+
 env:
-- EMBER_TRY_SCENARIO=ember-1.13
-- EMBER_TRY_SCENARIO=ember-2.4
-- EMBER_TRY_SCENARIO=ember-release
-- EMBER_TRY_SCENARIO=ember-beta
-- EMBER_TRY_SCENARIO=ember-canary
+  - EMBER_TRY_SCENARIO=default
+  - EMBER_TRY_SCENARIO=ember-1.13
+  - EMBER_TRY_SCENARIO=ember-release
+  - EMBER_TRY_SCENARIO=ember-beta
+  - EMBER_TRY_SCENARIO=ember-canary
+
 matrix:
   fast_finish: true
   allow_failures:
-  - env: EMBER_TRY_SCENARIO=ember-canary
+    - env: EMBER_TRY_SCENARIO=ember-canary
+
 before_install:
-- export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
-- npm config set spin false
-- npm install -g npm@^2
+  - npm config set spin false
+  - npm install -g bower
+  - bower --version
+  - npm install phantomjs-prebuilt
+  - node_modules/phantomjs-prebuilt/bin/phantomjs --version
+
 install:
-- npm install -g bower
-- npm install
-- bower install
+  - npm install
+  - bower install
+
 script:
-- ember try $EMBER_TRY_SCENARIO test --skip-cleanup
-notifications:
-  slack:
-    secure: kD427m+UVjnDngT3AjEP8VHn1AoFClGY2J0dzVW0z2ClGTW2GyNc/IjzKv0udKrRTJXAr8M6aLPBRhXI2DZouWSV/1Sni2I5pac9XYVGbWhUHNdqTEAQxiAEVjgjet3kXc/cZJejokohERJ++YSuDBv4iSekMiE2qCyLsjY7gPUT/TLvKbdezDAofjfFdDqV8Iwo8R1CIa5nfWXO/i94b8ilfk+AP8JhcWKfchQ6L8Qxvj2vUxvB8eNOhKPVoCvHVQrkBIWHAFjS2zdChqXGEK7LK6OFkRksJK1fk8n+NaxMcddNFf1pwos2utPGvHsUR9XtHP5mRskDYuVBIHqzjfGuLxDebSrtWadU/YKnCZB2Gz7cgSpnUNAIwqwjXAlCJY3hR1TyeoIA4tsWuu3tTwDkVqlC+uiJAqsa03nikJz0I26ymUpl7G7xtRiGsG+pWfZ0sTjqfKCMxAskzcTv3IRvUPvbubY1HEHov5LG9PhK+/eADHSwdLdEOIH96r/kP3YQSQMEqcek6bu682NolwF7UnvaMaqRf88cJCGCQy5AgKSqagcd2M9ZMt29wOj1zQSbfZIaOTQ8vzEUHk4WmB495niqwwKQYFeEtkbseyawwmRcORkniXAx4rUcOEDyCm0lfOaJ5UwYTPDuA/3F0RIxBjHOROkUq6WFCLaubOk=
+  # Usually, it's ok to finish the test scenario without reverting
+  #  to the addon's original dependency state, skipping "cleanup".
+  - ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup

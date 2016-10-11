@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github.com/levanto-financial/ember-phoenix",
+  "repository": "https://github.com/mike-north/ember-phoenix",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -19,7 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
-    "ember-cli": "2.7.0",
+    "ember-cli": "2.8.0",
     "ember-cli-app-version": "^2.0.0",
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-fastboot": "1.0.0-beta.2",
@@ -29,6 +29,7 @@
     "ember-cli-jshint": "^2.0.1",
     "ember-cli-qunit": "^2.0.0",
     "ember-cli-release": "1.0.0-beta.2",
+    "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-disable-prototype-extensions": "^1.1.0",
     "ember-export-application-global": "^1.0.5",
