@@ -1,7 +1,6 @@
-import Ember from 'ember';
-
-const { inject, Controller } = Ember;
+import Controller from '@ember/controller';
+import { inject } from '@ember/service';
 
 export default Controller.extend({
-  'user-socket': inject.service()
+  'user-socket': inject()
 });
