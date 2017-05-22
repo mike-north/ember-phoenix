@@ -3,7 +3,9 @@
   "version": "0.1.6",
   "description": "Elxir/Phoenix awesomeness for Ember.js apps",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "phoenix",
+    "elixir"
   ],
   "license": "MIT",
   "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",
