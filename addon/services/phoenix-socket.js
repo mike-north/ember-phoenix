@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Service from '@ember/service';
+import { assert } from '@ember/debug';
+import Evented from '@ember/object/evented';
 import { Socket } from 'phoenix';
-
-const { assert, Service, Evented } = Ember;
 
 export default Service.extend(Evented, {
   socket: null,
@@ -42,5 +42,4 @@ export default Service.extend(Evented, {
     channel.join();
     return channel;
   }
-
 });
