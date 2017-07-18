@@ -20,7 +20,10 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.0.0"
+    "broccoli-funnel": "^1.2.0",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.0.0",
+    "fastboot-transform": "^0.1.2"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

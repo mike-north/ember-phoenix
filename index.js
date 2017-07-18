@@ -1,15 +1,33 @@
 /* eslint-env node */
 'use strict';
 
+const fastbootTransform = require('fastboot-transform');
+const Funnel = require('broccoli-funnel');
+const Merge = require('broccoli-merge-trees');
+
 module.exports = {
   name: 'phoenix',
 
-  included: function(app) {
-    this._super.included(app);
-    if (process.env.EMBER_CLI_FASTBOOT !== 'true') {
-      app.import('vendor/phoenix.js');
-    } else {
-      app.import('vendor/phoenix-stub.js');
+  included() {
+    this._super.included.apply(this, arguments);
+
+    this.import('vendor/phoenix.js');
+  },
+
+  treeForVendor(tree) {
+    let trees = [];
+
+    if (tree) {
+      trees.push(tree);
     }
+
+    let phoenixTree = fastbootTransform(new Funnel('vendor', {
+      files: ['phoenix.js'],
+      destDir: 'phoenix'
+    }));
+
+    trees.push(phoenixTree);
+
+    return new Merge(trees);
   }
 };
