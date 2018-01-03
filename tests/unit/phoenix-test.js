@@ -17,5 +17,4 @@ test('it works', function(assert) {
     assert.ok(true, 'Did Close');
     done();
   });
-
 });
