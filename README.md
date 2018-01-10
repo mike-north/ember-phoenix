@@ -158,7 +158,9 @@ defmodule TodobirdWeb.V1.UserController do
     where(query, email: ^email)
   end
 end
+```
 
+```elixir
 # lib/todobird_web/controllers/v1/todo_list_controller.ex
 defmodule TodobirdWeb.V1.TodoListController do
   use TodobirdWeb, :controller
@@ -188,7 +190,9 @@ defmodule TodobirdWeb.V1.TodoListController do
     where(query, user_id: ^user_id)
   end
 end
+```
 
+```elixir
 # lib/todobird_web/views/v1/user_view.ex
 defmodule TodobirdWeb.V1.UserView do
   use TodobirdWeb, :view
