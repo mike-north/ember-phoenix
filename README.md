@@ -201,7 +201,9 @@ defmodule TodobirdWeb.V1.UserView do
   has_many :todo_lists,
     serializer: TodobirdWeb.V1.TodoListView
 end
+```
 
+```elixir
 # lib/todobird_web/views/v1/todo_list_view.ex
 defmodule TodobirdWeb.V1.TodoListView do
   use TodobirdWeb, :view
