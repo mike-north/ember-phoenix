@@ -40,9 +40,9 @@ export default Service.extend(Evented, {
 
     const channel = socket.channel(name, params);
     channel.join()
-      .receive("ok", (msg) => this.trigger('join', 'ok', name, msg))
-      .receive("error", (msg) => this.trigger('join', 'error', name, msg))
-      .receive("timeout", () => this.trigger('join', 'timeout', name));
+      .receive("ok", (msg) => this.trigger('join', 'ok', name, channel, msg))
+      .receive("error", (msg) => this.trigger('join', 'error', name, channel, msg))
+      .receive("timeout", () => this.trigger('join', 'timeout', name, channel));
     return channel;
   }
 });
