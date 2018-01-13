@@ -39,7 +39,10 @@ export default Service.extend(Evented, {
     assert('must connect to a socket first', socket);
 
     const channel = socket.channel(name, params);
-    channel.join();
+    channel.join()
+      .receive("ok", (msg) => this.trigger('join', 'ok', name, msg))
+      .receive("error", (msg) => this.trigger('join', 'error', name, msg))
+      .receive("timeout", () => this.trigger('join', 'timeout', name));
     return channel;
   }
 });
