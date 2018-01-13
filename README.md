@@ -36,8 +36,25 @@ export default PhoenixSocket.extend({
     // You may listen to open, "close" and "error"
     this.on('open', () => {
       console.log('Socket was opened!');
-    })
+    });
+    
+    this.set('channels', []);
+
+    this.on('join', (status, topic, channel, message = "") => {
+      switch (status) {
+        case "ok":
+          this.get('channels').pushObject(channel);
+          break;
+        case "error":
+          console.log(`Joining ${topic} failed: ${message}`);
+          break;
+        default:
+          throw "Joining Phoenix Channel failed!";
+      }
+    });
   },
+  
+  channels: null,
   
   connect(/*url, options*/) {
     const myjwt = "abacnwih12eh12...";
