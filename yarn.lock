@@ -20,17 +20,103 @@
   dependencies:
     "@glimmer/di" "^0.2.0"
 
-"@types/ember@2.8.33":
-  version "2.8.33"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-2.8.33.tgz#f6519f1b26c14bf599662523e7adfb54113c1814"
+"@types/ember@3.0.25":
+  version "3.0.25"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.0.25.tgz#9ab6a8be3d03a72176824bb7a59583648b6b1ced"
   dependencies:
+    "@types/ember__application" "*"
+    "@types/ember__array" "*"
+    "@types/ember__component" "*"
+    "@types/ember__controller" "*"
+    "@types/ember__debug" "*"
+    "@types/ember__engine" "*"
+    "@types/ember__error" "*"
+    "@types/ember__object" "*"
+    "@types/ember__polyfills" "*"
+    "@types/ember__routing" "*"
+    "@types/ember__runloop" "*"
+    "@types/ember__service" "*"
+    "@types/ember__string" "*"
+    "@types/ember__test" "*"
+    "@types/ember__utils" "*"
     "@types/handlebars" "*"
+    "@types/htmlbars-inline-precompile" "*"
     "@types/jquery" "*"
     "@types/rsvp" "*"
+
+"@types/ember__application@*":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/ember__application/-/ember__application-3.0.5.tgz#e171c5f44f58fb5600952bfde25c1dfe3785a08e"
+
+"@types/ember__array@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/ember__array/-/ember__array-3.0.3.tgz#87887852b16b7572441b9723994098f939f2a386"
+
+"@types/ember__component@*":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@types/ember__component/-/ember__component-3.0.4.tgz#e671213269bbf974445fb9fdd600d52ef0ae1e2a"
+  dependencies:
+    "@types/jquery" "*"
+
+"@types/ember__controller@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/ember__controller/-/ember__controller-3.0.3.tgz#622440d41ce0ae46f2610ed22670be9088cc9c2b"
+
+"@types/ember__debug@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/ember__debug/-/ember__debug-3.0.3.tgz#b8c3481e2305b636dca4524331efd4112071902b"
+
+"@types/ember__engine@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/ember__engine/-/ember__engine-3.0.3.tgz#440e656f825f73240419367ee7637ca94b4a1780"
+
+"@types/ember__error@*":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__error/-/ember__error-3.0.2.tgz#a30c0e51215feaaa7a32e341c5a04bd601a01d1b"
+
+"@types/ember__object@*":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/ember__object/-/ember__object-3.0.5.tgz#c4957cad68fffdd0959c6ca0d3469df8878b750c"
+  dependencies:
+    "@types/rsvp" "*"
+
+"@types/ember__polyfills@*":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__polyfills/-/ember__polyfills-3.0.2.tgz#ccd9f510a4895abf92435c968f9e582e86a81b25"
+
+"@types/ember__routing@*":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@types/ember__routing/-/ember__routing-3.0.5.tgz#9b193178a1cc29560992c57b04fd7d83a70f831d"
+
+"@types/ember__runloop@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/ember__runloop/-/ember__runloop-3.0.3.tgz#c23c9d4327ca811482422505a1f5bf1c48458f53"
+
+"@types/ember__service@*":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__service/-/ember__service-3.0.2.tgz#8265c94a599c865f633361b0e3b1efbeef393d7d"
+
+"@types/ember__string@*":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/ember__string/-/ember__string-3.0.2.tgz#2ffdf09baab6a641c94c0149a8ff3670f793788d"
+  dependencies:
+    "@types/handlebars" "*"
+
+"@types/ember__test@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/ember__test/-/ember__test-3.0.3.tgz#dda4721609e9e80d62af784757b8b3b76b49a07d"
+
+"@types/ember__utils@*":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ember__utils/-/ember__utils-3.0.1.tgz#f08aa24920515400fec869cbf29df69c4773f6d0"
 
 "@types/handlebars@*":
   version "4.0.36"
   resolved "https://registry.yarnpkg.com/@types/handlebars/-/handlebars-4.0.36.tgz#ff57c77fa1ab6713bb446534ddc4d979707a3a79"
+
+"@types/htmlbars-inline-precompile@*":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/htmlbars-inline-precompile/-/htmlbars-inline-precompile-1.0.0.tgz#4c283da1a7e303b269de3c6aa953acc8d8736949"
 
 "@types/jquery@*":
   version "3.2.17"
