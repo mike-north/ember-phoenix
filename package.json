@@ -20,7 +20,9 @@
     "lint:js": "eslint .",
     "start": "ember server",
     "test": "ember test",
-    "test:all": "ember try:each"
+    "test:all": "ember try:each",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "dependencies": {
     "broccoli-funnel": "^2.0.1",
