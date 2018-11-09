@@ -1,4 +1,4 @@
-import { Socket } from 'phoenix';
+import { Socket } from 'ember-phoenix';
 import { module, test } from 'qunit';
 
 module('phoenix javascript module');
