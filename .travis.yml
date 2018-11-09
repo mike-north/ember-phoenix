@@ -15,7 +15,7 @@ before_script:
 
 cache:
   yarn: true
-
+yarn: true
 env:
   global:
     # See https://git.io/vdao3 for details.
@@ -32,8 +32,8 @@ jobs:
     - stage: 'Tests'
       name: 'Tests'
       script:
-        - npm run lint:hbs
-        - npm run lint:js
+        - yarn lint:hbs
+        - yarn lint:js
         - npm test
 
     # we recommend new addons test the current and previous LTS
