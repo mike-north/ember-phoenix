@@ -6,7 +6,7 @@ const Funnel = require('broccoli-funnel');
 const MergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
-  name: 'phoenix',
+  name: require('./package').name,
 
   treeForAddon(tree) {
     return this._super.treeForAddon.call(this, this.addPhoenixToTree(tree));
