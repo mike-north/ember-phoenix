@@ -23,7 +23,7 @@
   "dependencies": {
     "broccoli-funnel": "^1.2.0",
     "broccoli-merge-trees": "^2.0.0",
-    "ember-cli-babel": "6.17.2"
+    "ember-cli-babel": "6.17.2",
     "phoenix": "^1.2.1"
   },
   "devDependencies": {
