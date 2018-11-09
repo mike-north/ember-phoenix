@@ -1849,20 +1849,20 @@ breakable@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/breakable/-/breakable-1.0.0.tgz#784a797915a38ead27bad456b5572cb4bbaa78c1"
 
-broccoli-asset-rev@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/broccoli-asset-rev/-/broccoli-asset-rev-2.7.0.tgz#c73da1d97c4180366fa442a87624ca1b7fb99161"
+broccoli-asset-rev@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/broccoli-asset-rev/-/broccoli-asset-rev-3.0.0.tgz#65a28c8a062d6ee2cffd91ed2a8309e0f8253ac6"
   dependencies:
-    broccoli-asset-rewrite "^1.1.0"
+    broccoli-asset-rewrite "^2.0.0"
     broccoli-filter "^1.2.2"
     broccoli-persistent-filter "^1.4.3"
     json-stable-stringify "^1.0.0"
     minimatch "^3.0.4"
     rsvp "^3.0.6"
 
-broccoli-asset-rewrite@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/broccoli-asset-rewrite/-/broccoli-asset-rewrite-1.1.0.tgz#77a5da56157aa318c59113245e8bafb4617f8830"
+broccoli-asset-rewrite@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/broccoli-asset-rewrite/-/broccoli-asset-rewrite-2.0.0.tgz#603c4a52d4c8987a2f681254436923ac0a9c94ab"
   dependencies:
     broccoli-filter "^1.2.3"
 
@@ -2057,7 +2057,7 @@ broccoli-funnel-reducer@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel-reducer/-/broccoli-funnel-reducer-1.0.0.tgz#11365b2a785aec9b17972a36df87eef24c5cc0ea"
 
-broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.1.0:
+broccoli-funnel@^1.0.0, broccoli-funnel@^1.0.1, broccoli-funnel@^1.1.0, broccoli-funnel@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/broccoli-funnel/-/broccoli-funnel-1.2.0.tgz#cddc3afc5ff1685a8023488fff74ce6fb5a51296"
   dependencies:
@@ -6722,6 +6722,10 @@ performance-now@^0.2.0:
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
+
+phoenix@^1.2.1:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.4.0.tgz#9cec8dbd8cbc59ecd2147bc09ca8ceb56b860d75"
 
 pify@^2.0.0:
   version "2.3.0"
