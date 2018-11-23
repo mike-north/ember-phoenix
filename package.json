@@ -60,7 +60,7 @@
     "eslint-plugin-node": "7.0.1",
     "husky": "1.2.0",
     "loader.js": "4.7.0",
-    "qunit-dom": "0.8.0",
+    "qunit-dom": "0.8.1",
     "semantic-release": "15.12.1",
     "travis-deploy-once": "5.0.9"
   },
