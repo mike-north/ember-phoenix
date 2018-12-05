@@ -21,8 +21,7 @@
     "start": "ember server",
     "test": "ember test",
     "test:all": "ember try:each",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "broccoli-funnel": "^2.0.1",
@@ -61,8 +60,7 @@
     "husky": "1.2.0",
     "loader.js": "4.7.0",
     "qunit-dom": "0.8.2",
-    "semantic-release": "15.12.4",
-    "travis-deploy-once": "5.0.9"
+    "semantic-release": "15.12.4"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
