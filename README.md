@@ -13,7 +13,7 @@ ember install ember-phoenix
 You can import phoenix framework client-side utilities as an ES6 module
 
 ```js
-import { Socket } from 'phoenix';
+import { Socket } from 'ember-phoenix';
 
 let socket = new Socket('/socket', {
   logger: ((kind, msg, data) => {
