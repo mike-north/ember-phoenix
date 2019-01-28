@@ -28,17 +28,17 @@ Build a service around a socket (you will usually have only one, since phoenix m
 
 ```js
 
-import PhoenixSocket from 'phoenix/services/phoenix-socket';
+import PhoenixSocket from 'ember-phoenix/services/phoenix-socket';
 
 export default PhoenixSocket.extend({
-  
+
   init() {
     // You may listen to open, "close" and "error"
     this.on('open', () => {
       console.log('Socket was opened!');
     })
   },
-  
+
   connect(/*url, options*/) {
     const myjwt = "abacnwih12eh12...";
     // connect the socket
