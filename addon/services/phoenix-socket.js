@@ -1,7 +1,7 @@
 import Service from '@ember/service';
 import { assert } from '@ember/debug';
 import Evented from '@ember/object/evented';
-import { Socket } from 'phoenix';
+import { Socket } from 'ember-phoenix';
 
 export default Service.extend(Evented, {
   socket: null,

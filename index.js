@@ -1,15 +1,26 @@
 /* eslint-env node */
 'use strict';
 
-module.exports = {
-  name: 'phoenix',
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const MergeTrees = require('broccoli-merge-trees');
 
-  included: function(app) {
-    this._super.included(app);
-    if (process.env.EMBER_CLI_FASTBOOT !== 'true') {
-      app.import('vendor/phoenix.js');
-    } else {
-      app.import('vendor/phoenix-stub.js');
-    }
+module.exports = {
+  name: require('./package').name,
+
+  treeForAddon(tree) {
+    return this._super.treeForAddon.call(this, this.addPhoenixToTree(tree));
+  },
+  addPhoenixToTree(tree) {
+    let phoenixPath = path.join(require.resolve('phoenix'), '..');
+    let phoenixTree = new Funnel(phoenixPath, {
+      files: ['phoenix.js'],
+      getDestinationPath(relativePath) {
+        if (relativePath.indexOf('phoenix.js') > -1) {
+          return 'index.js';
+        }
+      }
+    });
+    return new MergeTrees([tree, phoenixTree]);
   }
 };

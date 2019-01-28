@@ -1,3 +1,3 @@
-import PhoenixSocket from 'phoenix/services/phoenix-socket';
+import PhoenixSocket from 'ember-phoenix/services/phoenix-socket';
 
 export default PhoenixSocket.extend({});
