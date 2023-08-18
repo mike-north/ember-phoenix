@@ -2205,10 +2205,10 @@
   resolved "https://registry.yarnpkg.com/@types/cors/-/cors-2.8.12.tgz#6b2c510a7ad7039e98e7b8d3d6598f4359e5c080"
   integrity sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==
 
-"@types/ember@3.16.6":
-  version "3.16.6"
-  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.16.6.tgz#167a1e1641d6d24603e1511aec935359acae3402"
-  integrity sha512-S8sw98UUK/sqZS73+D5ESuqV4h6AxSy7Ffe6WFH0Np31BQrMflJv+52Wfj43SS0AfQW4DUuhMaMz6F12ge6VBA==
+"@types/ember@3.16.8":
+  version "3.16.8"
+  resolved "https://registry.yarnpkg.com/@types/ember/-/ember-3.16.8.tgz#27096df84d3420ef5a385a49bd1680efac734e01"
+  integrity sha512-Wl30X9uvvmAfUZRaCdmbc+EFVBE3dvAo4+PEdvBBrJbKuTci9jv/AW3U+cHwbHamESU+33wIEm5Ia+pwNvE01Q==
   dependencies:
     "@types/ember__application" "^3"
     "@types/ember__array" "^3"
