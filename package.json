@@ -33,7 +33,7 @@
     "@ember/optional-features": "0.7.0",
     "@types/ember": "3.16.8",
     "broccoli-asset-rev": "3.0.0",
-    "ember-ajax": "5.0.0",
+    "ember-ajax": "5.1.2",
     "ember-cli": "3.28.6",
     "ember-cli-dependency-checker": "3.2.0",
     "ember-cli-eslint": "5.1.0",
